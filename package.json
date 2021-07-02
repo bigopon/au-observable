@@ -1,0 +1,52 @@
+{
+  "name": "subscribe-command",
+  "description": "An Aurelia 2 client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aurelia": "dev",
+    "rxjs": "^7.1.0"
+  },
+  "devDependencies": {
+    "@aurelia/plugin-gulp": "dev",
+    "@aurelia/testing": "dev",
+    "@types/node": "^15.12.4",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "autoprefixer": "^10.2.6",
+    "connect": "^3.7.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "connect-injector": "^0.4.4",
+    "cross-env": "^7.0.3",
+    "del": "^6.0.0",
+    "eslint": "^7.29.0",
+    "gulp": "^4.0.2",
+    "gulp-dumber": "^1.0.3",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-terser": "^2.0.1",
+    "gulp-typescript": "^5.0.1",
+    "htmlhint": "^0.15.1",
+    "merge2": "^1.4.1",
+    "open": "^8.2.1",
+    "postcss": "^8.3.5",
+    "postcss-url": "^10.1.3",
+    "serve-static": "^1.14.1",
+    "socket.io": "^4.1.2",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  },
+  "scripts": {
+    "lint:js": "eslint src test --ext .js,.ts",
+    "lint:html": "htmlhint -c .htmlhintrc src",
+    "lint": "npm run lint:js && npm run lint:html",
+    "start": "gulp",
+    "build": "gulp clean && cross-env NODE_ENV=production gulp build",
+    "clear-cache": "gulp clear-cache"
+  }
+}
